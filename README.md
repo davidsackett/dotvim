@@ -36,11 +36,11 @@ Build Command-t
 
 ## Buffers
 
-`:e <filename>` to place in a buffer
-`:buffers` to get a list of all buffers
-`:b<number>` to switch to the desired buffer
+* `:e <filename>` to place in a buffer
+* `:buffers` to get a list of all buffers
+* `:b<number>` to switch to the desired buffer
 
 ## Fuzzy Text File Search
 
-`\t` match anything in your project
-`\b` only search open buffers
+* `\t` match anything in your project
+* `\b` only search open buffers
