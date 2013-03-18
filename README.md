@@ -15,8 +15,11 @@ Checkout then get the submodules
 Install other dependencies
 
     # required to compile command-t
-    sudo apt-get install ruby-dev
-    sudo apt-get install vim-gnome
+    sudo apt-get install ruby ruby-dev rake
+
+    # vim with ruby support is required for command-t
+    # (vim-gnome etc for gui machines)
+    sudo apt-get install vim-nox
 
 Build Command-t
 
