@@ -3,6 +3,12 @@
 This is largely tuned for Python and based on:
 http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
 
+## Currently included features
+
+* Solarized Vim colour scheme
+* Markdown syntax highlighting
+* Command-t for fuzzy filename searching
+
 ## Install
 
 Checkout then get the submodules
