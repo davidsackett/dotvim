@@ -56,3 +56,6 @@ syntax on
 
 " reformat go files on save
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+" compile go files on save
+autocmd FileType go compiler go
