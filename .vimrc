@@ -5,6 +5,7 @@ call pathogen#helptags()
 
 syntax enable
 set background=dark
+"set background=light
 colorscheme solarized
 
 " makes solarized look correct in vim within gnome terminal
@@ -46,6 +47,10 @@ set wrap "Wrap lines
 au FileType python highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 au FileType python match OverLength /\%81v.\+/
 
+"run flake8 on save
+autocmd BufWritePost *.py call Flake8()
+
+
 " Some Linux distributions set filetype in /etc/vimrc.
 " Clear filetype flags before changing runtimepath to force Vim to reload them.
 filetype off
@@ -58,4 +63,6 @@ syntax on
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 " compile go files on save
+let g:golang_onwrite = 1
+let g:golang_inline_highlight = 1
 autocmd FileType go compiler go
