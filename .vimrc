@@ -45,7 +45,7 @@ set wrap "Wrap lines
 "highlights lines longer than 80 characters in python files
 "TODO change to solarized colour
 au FileType python highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-au FileType python match OverLength /\%81v.\+/
+au FileType python match OverLength /\%80v.\+/
 
 "run flake8 on save
 autocmd BufWritePost *.py call Flake8()
