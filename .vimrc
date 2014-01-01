@@ -66,3 +66,9 @@ autocmd FileType go autocmd BufWritePre <buffer> Fmt
 let g:golang_onwrite = 1
 let g:golang_inline_highlight = 1
 autocmd FileType go compiler go
+
+" Nerdtree
+" Open nerdtree if no files are opened
+autocmd vimenter * if !argc() | NERDTree | endif
+" map to ctrl+n
+map <C-n> :NERDTreeToggle<CR>
